@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="JsonView.exe" version="1.0.0.0" publicKeyToken="c733070d3502adce" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="JsonView" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="JsonView.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JsonView.exe" size="57344">
+      <assemblyIdentity name="JsonView" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>kk+fUdImRCGuLcAhNRmWePWf14o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JsonViewer.dll" size="60416">
+      <assemblyIdentity name="JsonViewer" version="1.0.4631.30699" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>GTa628fwZUg57cHG+f0224XNykI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="57344">
+      <assemblyIdentity name="Newtonsoft.Json" version="1.1.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>19hFAqR+3B6QzKiHBL1zqNP1vro=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="JsonView.exe.config" size="306">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UKvS3ugclahyu95Zxg+51VxCVD4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=BLUEMARY\DY" issuerKeyHash="6bdd8280347e4b9df4b31cfd08bd2a9ad2f9a796" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>u3AZigNRSOvqDhgJA1AvjISdplE=</DigestValue></Reference></SignedInfo><SignatureValue>hRbhBvLTRgvw1nMHBKq5rSuYjGeXAD5u1LfT3ZBISh4F2efIaI0CbNZ19v3NkKZgMQMeCiXD9zvD7335DkgFxyJvVkZVCyXEJWjVGQyas30dFLAIiiUk5WVdi4969sbJ1GsSanKvPwWvZPHTaOdKDEsimAxUjGm3Sm5tnhA5eMo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sXdDWgcg9bpQ2pJllC+nWCDeN8l02aB112qIFKuzVrFDgp4w51eg2zEqNpCDcM4Q4iWJYxK5P3O7bH3bVNQqcpGL0HP0nLpVbe8esvPDjJny0NBlrZAhFiq8j9KYtFSXAkU3o/RGALuyoWs7Rl/xOX8lK7lMwWW0FtK5lb1wRrc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="51a69d848c2f500309180eeaeb4851038a1970bb" Description="" Url=""><as:assemblyIdentity name="JsonView.exe" version="1.0.0.0" publicKeyToken="c733070d3502adce" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BLUEMARY\DY</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>qhIdexo8lnnARuLASUgbAD943pQ=</DigestValue></Reference></SignedInfo><SignatureValue>CMsSVfQhH1BfTcA3lciosdSvRq0fLgEhV3YmrtTZOZP9nyKQJfBbqkIkIqV2OJywGjqSszvc5BGoYreplLiYbBgbGOYX61d6xx6zVp8DrjjuGf46RYFaYL64CWQRbCM4of15UvIH0ZUZWzVaUJ0+//rdk8791Db2gXG+x0vuS+U=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sXdDWgcg9bpQ2pJllC+nWCDeN8l02aB112qIFKuzVrFDgp4w51eg2zEqNpCDcM4Q4iWJYxK5P3O7bH3bVNQqcpGL0HP0nLpVbe8esvPDjJny0NBlrZAhFiq8j9KYtFSXAkU3o/RGALuyoWs7Rl/xOX8lK7lMwWW0FtK5lb1wRrc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQUtFz3PUSk5RCL5p72opvFzANBgkqhkiG9w0BAQUFADAhMR8wHQYDVQQDHhYAQgBMAFUARQBNAEEAUgBZAFwARABZMB4XDTEyMDkwNTA5MDU1NFoXDTEzMDkwNTE1MDU1NFowITEfMB0GA1UEAx4WAEIATABVAEUATQBBAFIAWQBcAEQAWTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsXdDWgcg9bpQ2pJllC+nWCDeN8l02aB112qIFKuzVrFDgp4w51eg2zEqNpCDcM4Q4iWJYxK5P3O7bH3bVNQqcpGL0HP0nLpVbe8esvPDjJny0NBlrZAhFiq8j9KYtFSXAkU3o/RGALuyoWs7Rl/xOX8lK7lMwWW0FtK5lb1wRrcCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAdwoJVhFkEtoG2Eu1LHqiCtwWzba6awbrs8UXq9eSHfU5u0572hGuoWUIoSqT4hBBTspcp+PRCKRurB11RmGZo9jPldNJW/qxt3KP5SfD7xakBQOCUXvOD+CrNxUBUjha0uUjI8XFhaxiIwoBTlEUZGjGI2ghL+86ArYm6s1RrDQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

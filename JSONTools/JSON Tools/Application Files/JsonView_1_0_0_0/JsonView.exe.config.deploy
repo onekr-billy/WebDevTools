@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<configuration>
+  <appSettings>
+    <add key="HistoryUrl" value="http://api.muyingzhijia.me/goods.svc/get_goodscategory_list/MobileWebSite/2606951290464634a57074be4d7faee3/null/0/0" />
+  </appSettings>
+<startup><supportedRuntime version="v2.0.50727"/></startup></configuration>
